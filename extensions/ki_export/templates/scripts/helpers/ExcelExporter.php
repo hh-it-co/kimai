@@ -50,7 +50,7 @@ class Kimai_Export_ExcelExporter extends PHPExcel
         'activity' => ['fieldName' => 'activityName'],
         'description' => ['type' => 'text'],
         'comment' => ['type' => 'text'],
-        'user' => ['fieldName' => 'username', 'langLabel' => 'username'],
+        'user' => ['fieldName' => 'useralias', 'langLabel' => 'username'],
         'cleared' => ['type' => 'boolean'],
     ];
 
