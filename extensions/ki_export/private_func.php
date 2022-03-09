@@ -143,6 +143,7 @@ function export_get_data(
         'location',
         'trackingNumber',
         'username',
+        'useralias',
         'cleared'
     ];
     $timeSheetEntriesCount = count($timeSheetEntries);
@@ -191,6 +192,7 @@ function export_get_data(
                 $arr['location'] = $timeSheetEntries[$timeSheetEntries_index]['location'];
                 $arr['trackingNumber'] = $timeSheetEntries[$timeSheetEntries_index]['trackingNumber'];
                 $arr['username'] = $timeSheetEntries[$timeSheetEntries_index]['userName'];
+                $arr['useralias'] = $timeSheetEntries[$timeSheetEntries_index]['userAlias'];
                 $arr['cleared'] = $timeSheetEntries[$timeSheetEntries_index]['cleared'];
                 $result_arr[] = $arr;
             }
@@ -216,6 +218,7 @@ function export_get_data(
             $arr['comment'] = $expenses[$expenses_index]['comment'];
             $arr['commentType'] = $expenses[$expenses_index]['commentType'];
             $arr['username'] = $expenses[$expenses_index]['userName'];
+            $arr['useralias'] = $expenses[$expenses_index]['userAlias'];
             $arr['cleared'] = $expenses[$expenses_index]['cleared'];
             $result_arr[] = $arr;
             $expenses_index++;
@@ -262,6 +265,7 @@ function export_get_data(
             $arr['location'] = $timeSheetEntries[$timeSheetEntries_index]['location'];
             $arr['trackingNumber'] = $timeSheetEntries[$timeSheetEntries_index]['trackingNumber'];
             $arr['username'] = $timeSheetEntries[$timeSheetEntries_index]['userName'];
+            $arr['useralias'] = $timeSheetEntries[$timeSheetEntries_index]['userAlias'];
             $arr['cleared'] = $timeSheetEntries[$timeSheetEntries_index]['cleared'];
             $result_arr[] = $arr;
         }
@@ -292,6 +296,7 @@ function export_get_data(
         }
         $arr['commentType'] = $expenses[$expenses_index]['commentType'];
         $arr['username'] = $expenses[$expenses_index]['userName'];
+        $arr['useralias'] = $expenses[$expenses_index]['userAlias'];
         $arr['cleared'] = $expenses[$expenses_index]['cleared'];
         $expenses_index++;
         $result_arr[] = $arr;
